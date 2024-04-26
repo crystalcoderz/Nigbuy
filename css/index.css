@@ -1,0 +1,193 @@
+/* 
+
+CSS for Index.
+
+*/
+
+#landing-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    font-family: 'FiraCode-Regular', monospace;
+    color: var(--primary-txt-colour);
+    background-color: var(--primary-bg-colour);
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -1
+}
+
+.video-icon {
+    position: absolute;
+    font-size: 24px;
+    height: 30px;
+    width: 30px;
+    color: white;
+    z-index: 2;
+    transition: transform 0.3s ease;
+    cursor: pointer
+}
+
+.video-icon:hover {
+    transform: scale(1.2)
+}
+
+#sparkles-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+    background: url('../images/sparkles.gif') repeat
+}
+
+.sparkles {
+    position: relative;
+    text-align: center
+}
+
+.profile-box {
+    width: var(--box-width);
+    margin-top: calc(100vh / 6);
+    box-shadow: 0 0 10px var(--primary-bg-colour);
+    background-color: var(--primary-bg-colour);
+    transition: all .3s ease-in-out
+}
+
+.profile-box:hover {
+    box-shadow: 0 0 20px var(--seconday-bg-colour);
+    background-color: var(--secondary-bg-colour);
+    transform: translateY(-5px)
+}
+
+.profile-pic-container {
+    width: calc(var(--box-width)/ 2.5);
+    height: calc(var(--box-width)/ 2.5);
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.name-badge-container {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+#badge-icon {
+    width: 15px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.text-container {
+    margin-top: var(--profile-pic-margin)
+}
+
+.typed-cursor {
+    display: inline-block;
+    width: 1px;
+    color: transparent;
+    background-color: white;
+    margin-left: 2px;
+    animation: blink 0.7s infinite;
+    font-weight: bold;
+    height: 1.5em;
+    font-size: 1.25em;
+    vertical-align: bottom;
+    font-family: 'FiraCode-Regular', monospace
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#typed-text {
+    font-family: 'FiraCode-Regular', monospace
+}
+
+#tooltip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem
+}
+
+#tooltip-container [data-tooltip] {
+    color: #fff;
+    font-size: 24px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 60px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+#tooltip-container [data-tooltip]:last-child {
+    margin-right: 0;
+}
+
+#tooltip-container [data-tooltip]:hover {
+    transform: scale(1.2)
+}
+
+.button-container {
+    width: var(--box-width);
+    margin-bottom: 1rem
+}
+
+.arrow {
+    filter: drop-shadow(0 0 10px #fff);
+    transition: transform .3s ease-in-out
+}
+
+.btn:hover .arrow {
+    transform: translateX(5px)
+}
+
+.icon-container {
+    width: 2em;
+    height: 2em;
+    -o-object-fit: contain;
+       object-fit: contain
+}
+
+.glow-discord {
+    filter: drop-shadow(0 0 10px #5965f3)
+}
+
+.glow-telegram {
+    filter: drop-shadow(0 0 10px #21a1e1)
+}
+
+.glow-cracked {
+    filter: drop-shadow(0 0 10px #94ffff)
+}
+
+.glow-flipd {
+    filter: drop-shadow(0 0 10px #fff)
+}
+
+.glow-kingz {
+    filter: drop-shadow(0 0 10px #dcdcdc)
+}

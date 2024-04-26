@@ -1,0 +1,274 @@
+/* 
+
+Universal CSS.
+
+*/
+
+
+@font-face {
+    font-family: 'Chillax-Variable';
+    src: url('../fonts/Chillax-Variable.woff2') format('woff2'),
+        url('../fonts/Chillax-Variable.woff') format('woff'),
+        url('../fonts/Chillax-Variable.ttf') format('truetype');
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax-ExtraLight';
+    src: url('../fonts/Chillax-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Chillax-ExtraLight.woff') format('woff'),
+        url('../fonts/Chillax-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax-Light';
+    src: url('../fonts/Chillax-Light.woff2') format('woff2'),
+        url('../fonts/Chillax-Light.woff') format('woff'),
+        url('../fonts/Chillax-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax-Regular';
+    src: url('../fonts/Chillax-Regular.woff2') format('woff2'),
+        url('../fonts/Chillax-Regular.woff') format('woff'),
+        url('../fonts/Chillax-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax-Medium';
+    src: url('../fonts/Chillax-Medium.woff2') format('woff2'),
+        url('../fonts/Chillax-Medium.woff') format('woff'),
+        url('../fonts/Chillax-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax-SemiBold';
+    src: url('../fonts/Chillax-SemiBold.woff2') format('woff2'),
+        url('../fonts/Chillax-SemiBold.woff') format('woff'),
+        url('../fonts/Chillax-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chillax-Bold';
+    src: url('../fonts/Chillax-Bold.woff2') format('woff2'),
+        url('../fonts/Chillax-Bold.woff') format('woff'),
+        url('../fonts/Chillax-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'FiraCode-Variable';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/FiraCode-Variable.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'FiraCode-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/FiraCode-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'FiraCode-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/FiraCode-Light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'FiraCode-Medium';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/FiraCode-Medium.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'FiraCode-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/FiraCode-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'FiraCode-SemiBold';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/FiraCode-SemiBold.woff2) format('woff2');
+}
+
+
+
+:root {
+    --primary-bg-colour: #111111;
+    --secondary-bg-colour: #3b3b3b;
+    --primary-txt-colour: #CCCCCC;
+    --secondary-txt-colour: #999999;
+    --box-width: 24rem;
+    --btn-text-size: 16px;
+    --profile-pic-margin: 5rem;
+    --button-height: 3rem;
+    --animation-delay: 3s
+}
+
+::-webkit-scrollbar {
+    width: 7px
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-bg-colour)
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-txt-colour)
+}
+
+* {
+    scrollbar-color: var(--primary-txt-colour) var(--primary-bg-colour);
+    scrollbar-width: thin;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+body {
+    background-color: var(--primary-bg-colour);
+    font-family: 'Chillax-Variable', sans-serif;
+}
+
+@keyframes glow-text {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .3)
+    }
+
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, .9), 0 0 40px rgba(255, 255, 255, .5)
+    }
+
+    100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, .5), 0 0 10px rgba(255, 255, 255, .3)
+    }
+}
+
+.text-glow {
+    animation: glow-text 3s infinite
+}
+
+.glow-white {
+    filter: drop-shadow(0 0 10px #fff)
+}
+
+.btn {
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--primary-bg-colour);
+    background-color: var(--primary-bg-colour)
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background-color: var(--secondary-bg-colour);
+    box-shadow: 0 0 10px var(--secondary-bg-colour)
+}
+
+.btn-text {
+    font-size: var(--btn-text-size)
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem
+}
+
+#footer p {
+    color: var(--primary-txt-colour);
+    font-size: 12px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, .5)
+}
+
+#footer p:hover {
+    animation: glow-text 3s infinite
+}
+
+@media (min-width:640px) {
+    :root {
+        --box-width: 18rem;
+        --profile-pic-margin: 4rem;
+        --btn-text-size: 12px;
+        --button-height: 2.5rem
+    }
+}
+
+@media (min-width:768px) {
+    :root {
+        --box-width: 22rem;
+        --profile-pic-margin: 5rem;
+        --btn-text-size: 12px;
+        --button-height: 3rem
+    }
+}
+
+@media (min-width:1024px) {
+    :root {
+        --box-width: 28rem;
+        --profile-pic-margin: 6rem;
+        --btn-text-size: 18px;
+        --button-height: 3.5rem
+    }
+}
+
+@media (min-width:1280px) {
+    :root {
+        --box-width: 32rem;
+        --profile-pic-margin: 7rem;
+        --btn-text-size: 18px;
+        --button-height: 4rem
+    }
+}
+
+.slide-up {
+    animation: fadeInUp;
+    animation-duration: var(--animation-delay)
+}
+
+.slide-right {
+    animation: fadeInLeft;
+    animation-duration: var(--animation-delay)
+}
+
+.slide-left {
+    animation: fadeInRight;
+    animation-duration: var(--animation-delay)
+}
+
+.slide-down {
+    animation: fadeInDown;
+    animation-duration: var(--animation-delay)
+}
+
+.slide-out {
+    animation: fadeOut;
+    animation-duration: var(--animation-delay)
+}
