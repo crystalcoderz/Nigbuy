@@ -26,7 +26,7 @@ $(document).ready( function () {
         });
 
         new Typed('#typed-text', {
-            strings: ['full-stack/bot developer', 'currency-exchanger'],
+            strings: ['autistic','retard','nigga','crypto enthusiast','narcissistic'],
             typeSpeed: 100,
             startDelay: 3,
             backSpeed: 50,
