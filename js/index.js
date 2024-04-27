@@ -26,7 +26,7 @@ $(document).ready( function () {
         });
 
         new Typed('#typed-text', {
-            strings: ['autistic','retard','nigga','crypto enthusiast','narcissistic'],
+            strings: ['autistic','retard','nigga','racist','god'],
             typeSpeed: 100,
             startDelay: 3,
             backSpeed: 50,
